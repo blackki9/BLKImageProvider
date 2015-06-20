@@ -8,6 +8,7 @@
 
 #ifndef BLKImageProvider_BLKImageExport_h
 #define BLKImageProvider_BLKImageExport_h
+#import "BLKHandlers.h"
 
 @protocol BLKImageExporter <NSObject>
 

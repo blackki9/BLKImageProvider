@@ -15,6 +15,7 @@
 		FDD2276F1B2DD0CF00770969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD2276E1B2DD0CF00770969 /* Images.xcassets */; };
 		FDD227721B2DD0CF00770969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD227701B2DD0CF00770969 /* LaunchScreen.xib */; };
 		FDD2277E1B2DD0CF00770969 /* BLKImageProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2277D1B2DD0CF00770969 /* BLKImageProviderTests.m */; };
+		FDEDBD301B35819500D59186 /* BLKPhotoLibraryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		FDD227771B2DD0CF00770969 /* BLKImageProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLKImageProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD2277C1B2DD0CF00770969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD2277D1B2DD0CF00770969 /* BLKImageProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLKImageProviderTests.m; sourceTree = "<group>"; };
+		FDEDBD2E1B35819500D59186 /* BLKPhotoLibraryExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryExporter.h; sourceTree = "<group>"; };
+		FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryExporter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 			children = (
 				FD3979271B35763D00FD15F1 /* BLKPhotoLibraryImporter.h */,
 				FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */,
+				FDEDBD2E1B35819500D59186 /* BLKPhotoLibraryExporter.h */,
+				FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */,
 			);
 			path = implementations;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 				FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */,
 				FD3979291B35763D00FD15F1 /* BLKPhotoLibraryImporter.m in Sources */,
 				FDD227641B2DD0CF00770969 /* main.m in Sources */,
+				FDEDBD301B35819500D59186 /* BLKPhotoLibraryExporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
