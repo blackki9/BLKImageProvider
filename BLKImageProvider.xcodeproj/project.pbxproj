@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD3979291B35763D00FD15F1 /* BLKPhotoLibraryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */; };
 		FDD227641B2DD0CF00770969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227631B2DD0CF00770969 /* main.m */; };
 		FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227661B2DD0CF00770969 /* AppDelegate.m */; };
 		FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227691B2DD0CF00770969 /* ViewController.m */; };
@@ -27,6 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD3979221B35709800FD15F1 /* BLKImageProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImageProvider.h; sourceTree = "<group>"; };
+		FD3979231B3570B800FD15F1 /* BLKImageImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImageImporter.h; sourceTree = "<group>"; };
+		FD3979241B3570C600FD15F1 /* BLKImageExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImageExporter.h; sourceTree = "<group>"; };
+		FD3979251B35713600FD15F1 /* BLKHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKHandlers.h; sourceTree = "<group>"; };
+		FD3979271B35763D00FD15F1 /* BLKPhotoLibraryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryImporter.h; sourceTree = "<group>"; };
+		FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryImporter.m; sourceTree = "<group>"; };
 		FDD2275E1B2DD0CF00770969 /* BLKImageProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLKImageProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD227621B2DD0CF00770969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD227631B2DD0CF00770969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +67,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD3979211B356E2F00FD15F1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD3979261B3575A400FD15F1 /* implementations */,
+				FD3979221B35709800FD15F1 /* BLKImageProvider.h */,
+				FD3979231B3570B800FD15F1 /* BLKImageImporter.h */,
+				FD3979241B3570C600FD15F1 /* BLKImageExporter.h */,
+				FD3979251B35713600FD15F1 /* BLKHandlers.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FD3979261B3575A400FD15F1 /* implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FD3979271B35763D00FD15F1 /* BLKPhotoLibraryImporter.h */,
+				FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */,
+			);
+			path = implementations;
+			sourceTree = "<group>";
+		};
 		FDD227551B2DD0CF00770969 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,7 @@
 		FDD227601B2DD0CF00770969 /* BLKImageProvider */ = {
 			isa = PBXGroup;
 			children = (
+				FD3979211B356E2F00FD15F1 /* Classes */,
 				FDD227651B2DD0CF00770969 /* AppDelegate.h */,
 				FDD227661B2DD0CF00770969 /* AppDelegate.m */,
 				FDD227681B2DD0CF00770969 /* ViewController.h */,
@@ -221,6 +250,7 @@
 			files = (
 				FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */,
 				FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */,
+				FD3979291B35763D00FD15F1 /* BLKPhotoLibraryImporter.m in Sources */,
 				FDD227641B2DD0CF00770969 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLKImageProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BLKImageProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +444,7 @@
 				FDD227831B2DD0CF00770969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDD227841B2DD0CF00770969 /* Build configuration list for PBXNativeTarget "BLKImageProviderTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				FDD227861B2DD0CF00770969 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
