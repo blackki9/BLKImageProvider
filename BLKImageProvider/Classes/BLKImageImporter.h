@@ -15,6 +15,8 @@
 @protocol BLKImageImporter <NSObject>
 
 - (void)importImageWithCompletitionHandler:(BLKImageProviderImportHandler)completitionHandler inController:(UIViewController*)presentController;
+
+@optional
 - (void)importImageWitController:(UIViewController*)controller popoverOrigin:(CGRect)popoverOrigin withCompletitionHandler:(BLKImageProviderImportHandler)completitionHandler;
 
 @end

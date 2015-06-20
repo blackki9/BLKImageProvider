@@ -17,6 +17,7 @@
 		FDEDBD341B35895400D59186 /* BLKImporterFactoryImplentation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD331B35895400D59186 /* BLKImporterFactoryImplentation.m */; };
 		FDEDBD3A1B3589FF00D59186 /* BLKPhotoLibraryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD371B3589FF00D59186 /* BLKPhotoLibraryExporter.m */; };
 		FDEDBD3B1B3589FF00D59186 /* BLKPhotoLibraryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */; };
+		FDEDBD3F1B358A7F00D59186 /* BLKCameraImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD3E1B358A7F00D59186 /* BLKCameraImporter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		FDEDBD371B3589FF00D59186 /* BLKPhotoLibraryExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryExporter.m; sourceTree = "<group>"; };
 		FDEDBD381B3589FF00D59186 /* BLKPhotoLibraryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryImporter.h; sourceTree = "<group>"; };
 		FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryImporter.m; sourceTree = "<group>"; };
+		FDEDBD3D1B358A7F00D59186 /* BLKCameraImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKCameraImporter.h; sourceTree = "<group>"; };
+		FDEDBD3E1B358A7F00D59186 /* BLKCameraImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKCameraImporter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,7 @@
 		FD3979261B3575A400FD15F1 /* implementations */ = {
 			isa = PBXGroup;
 			children = (
+				FDEDBD3C1B358A6000D59186 /* camera */,
 				FDEDBD351B3589FF00D59186 /* photoLib */,
 				FDEDBD321B35895400D59186 /* BLKImporterFactoryImplentation.h */,
 				FDEDBD331B35895400D59186 /* BLKImporterFactoryImplentation.m */,
@@ -166,6 +170,15 @@
 				FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */,
 			);
 			path = photoLib;
+			sourceTree = "<group>";
+		};
+		FDEDBD3C1B358A6000D59186 /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBD3D1B358A7F00D59186 /* BLKCameraImporter.h */,
+				FDEDBD3E1B358A7F00D59186 /* BLKCameraImporter.m */,
+			);
+			path = camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +285,7 @@
 				FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */,
 				FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */,
 				FDD227641B2DD0CF00770969 /* main.m in Sources */,
+				FDEDBD3F1B358A7F00D59186 /* BLKCameraImporter.m in Sources */,
 				FDEDBD341B35895400D59186 /* BLKImporterFactoryImplentation.m in Sources */,
 				FDEDBD3A1B3589FF00D59186 /* BLKPhotoLibraryExporter.m in Sources */,
 			);

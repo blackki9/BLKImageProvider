@@ -14,6 +14,7 @@
 @property (nonatomic,strong) UIPopoverController* popover;
 @property (nonatomic, strong) UIImagePickerController* imagePicker;
 @property (nonatomic, copy) BLKImageProviderImportHandler finishHandler;
+
 @end
 
 @implementation BLKPhotoLibraryImporter
@@ -45,7 +46,7 @@
 - (void)importImageWithCompletitionHandler:(BLKImageProviderImportHandler)completitionHandler inController:(UIViewController*)presentController
 {
     if([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        completitionHandler(nil,NO);
+        completitionHandler(nil);
         return;
     }
     
@@ -56,7 +57,7 @@
 - (void)importImageWitController:(UIViewController*)controller popoverOrigin:(CGRect)popoverOrigin withCompletitionHandler:(BLKImageProviderImportHandler)completitionHandler
 {
     if(![[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        completitionHandler(nil,NO);
+        completitionHandler(nil);
         return;
     }
     
@@ -69,13 +70,13 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage* image = info[UIImagePickerControllerOriginalImage];
-    _finishHandler(image,YES);
+    _finishHandler(image);
     [self p_hideImagePicker];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    _finishHandler(nil,NO);
+    _finishHandler(nil);
     [self p_hideImagePicker];
 }
 

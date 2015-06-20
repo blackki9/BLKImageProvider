@@ -10,7 +10,7 @@
 #define BLKImageProvider_BLKHandlers_h
 @class UIImage;
 
-typedef void (^BLKImageProviderImportHandler) (UIImage* image,BOOL success);
+typedef void (^BLKImageProviderImportHandler) (UIImage* image);
 typedef void (^BLKImageProviderExportHandler) (BOOL success);
 
 #endif
