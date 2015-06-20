@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BLKDocumentsFolderBrowseViewController">
+            <connections>
+                <outlet property="tableView" destination="cjb-Um-R3C" id="MKQ-VC-biv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Image to Import" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZe-TH-Atf">
+                    <rect key="frame" x="213" y="32" width="174" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="174" id="CWo-XF-CZ1"/>
+                        <constraint firstAttribute="height" constant="21" id="MZN-FA-xeC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-Um-R3C">
+                    <rect key="frame" x="0.0" y="74" width="600" height="518"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="GxT-Qk-ZrP"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qZe-TH-Atf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="32" id="GWy-wT-Zry"/>
+                <constraint firstItem="cjb-Um-R3C" firstAttribute="top" secondItem="qZe-TH-Atf" secondAttribute="bottom" constant="21" id="YWL-VS-akP"/>
+                <constraint firstItem="cjb-Um-R3C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YiM-v5-jCQ"/>
+                <constraint firstItem="qZe-TH-Atf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bfp-AT-7X6"/>
+                <constraint firstAttribute="bottom" secondItem="cjb-Um-R3C" secondAttribute="bottom" constant="8" id="peH-4W-hHp"/>
+                <constraint firstAttribute="trailing" secondItem="cjb-Um-R3C" secondAttribute="trailing" id="pgR-TN-mk8"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

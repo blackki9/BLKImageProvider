@@ -20,6 +20,10 @@
 		FDEDBD3F1B358A7F00D59186 /* BLKCameraImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD3E1B358A7F00D59186 /* BLKCameraImporter.m */; };
 		FDEDBD431B35907D00D59186 /* BLKDocumentsFolderImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD421B35907D00D59186 /* BLKDocumentsFolderImporter.m */; };
 		FDEDBD461B35908D00D59186 /* BLKDocumentsFolderExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD451B35908D00D59186 /* BLKDocumentsFolderExporter.m */; };
+		FDEDBD4A1B35973500D59186 /* BLKDocumentsFolderBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD481B35973500D59186 /* BLKDocumentsFolderBrowseViewController.m */; };
+		FDEDBD4B1B35973500D59186 /* BLKDocumentsFolderBrowseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBD491B35973500D59186 /* BLKDocumentsFolderBrowseViewController.xib */; };
+		FDEDBD4E1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD4D1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.m */; };
+		FDEDBD501B35990F00D59186 /* BLKDocumentsBrowserTableCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDEDBD4F1B35990F00D59186 /* BLKDocumentsBrowserTableCellTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,12 @@
 		FDEDBD421B35907D00D59186 /* BLKDocumentsFolderImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKDocumentsFolderImporter.m; sourceTree = "<group>"; };
 		FDEDBD441B35908D00D59186 /* BLKDocumentsFolderExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKDocumentsFolderExporter.h; sourceTree = "<group>"; };
 		FDEDBD451B35908D00D59186 /* BLKDocumentsFolderExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKDocumentsFolderExporter.m; sourceTree = "<group>"; };
+		FDEDBD471B35973500D59186 /* BLKDocumentsFolderBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKDocumentsFolderBrowseViewController.h; sourceTree = "<group>"; };
+		FDEDBD481B35973500D59186 /* BLKDocumentsFolderBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKDocumentsFolderBrowseViewController.m; sourceTree = "<group>"; };
+		FDEDBD491B35973500D59186 /* BLKDocumentsFolderBrowseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLKDocumentsFolderBrowseViewController.xib; sourceTree = "<group>"; };
+		FDEDBD4C1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKDocumentsBrowserTableCellTableViewCell.h; sourceTree = "<group>"; };
+		FDEDBD4D1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKDocumentsBrowserTableCellTableViewCell.m; sourceTree = "<group>"; };
+		FDEDBD4F1B35990F00D59186 /* BLKDocumentsBrowserTableCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BLKDocumentsBrowserTableCellTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +205,12 @@
 				FDEDBD421B35907D00D59186 /* BLKDocumentsFolderImporter.m */,
 				FDEDBD441B35908D00D59186 /* BLKDocumentsFolderExporter.h */,
 				FDEDBD451B35908D00D59186 /* BLKDocumentsFolderExporter.m */,
+				FDEDBD471B35973500D59186 /* BLKDocumentsFolderBrowseViewController.h */,
+				FDEDBD481B35973500D59186 /* BLKDocumentsFolderBrowseViewController.m */,
+				FDEDBD491B35973500D59186 /* BLKDocumentsFolderBrowseViewController.xib */,
+				FDEDBD4C1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.h */,
+				FDEDBD4D1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.m */,
+				FDEDBD4F1B35990F00D59186 /* BLKDocumentsBrowserTableCellTableViewCell.xib */,
 			);
 			path = documents;
 			sourceTree = "<group>";
@@ -279,9 +295,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDBD501B35990F00D59186 /* BLKDocumentsBrowserTableCellTableViewCell.xib in Resources */,
 				FDD2276D1B2DD0CF00770969 /* Main.storyboard in Resources */,
 				FDD227721B2DD0CF00770969 /* LaunchScreen.xib in Resources */,
 				FDD2276F1B2DD0CF00770969 /* Images.xcassets in Resources */,
+				FDEDBD4B1B35973500D59186 /* BLKDocumentsFolderBrowseViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,8 +320,10 @@
 				FDEDBD431B35907D00D59186 /* BLKDocumentsFolderImporter.m in Sources */,
 				FDEDBD461B35908D00D59186 /* BLKDocumentsFolderExporter.m in Sources */,
 				FDEDBD3B1B3589FF00D59186 /* BLKPhotoLibraryImporter.m in Sources */,
+				FDEDBD4E1B3598C600D59186 /* BLKDocumentsBrowserTableCellTableViewCell.m in Sources */,
 				FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */,
 				FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */,
+				FDEDBD4A1B35973500D59186 /* BLKDocumentsFolderBrowseViewController.m in Sources */,
 				FDD227641B2DD0CF00770969 /* main.m in Sources */,
 				FDEDBD3F1B358A7F00D59186 /* BLKCameraImporter.m in Sources */,
 				FDEDBD341B35895400D59186 /* BLKImporterFactoryImplentation.m in Sources */,
