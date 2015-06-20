@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD3979291B35763D00FD15F1 /* BLKPhotoLibraryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */; };
 		FDD227641B2DD0CF00770969 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227631B2DD0CF00770969 /* main.m */; };
 		FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227661B2DD0CF00770969 /* AppDelegate.m */; };
 		FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD227691B2DD0CF00770969 /* ViewController.m */; };
@@ -15,7 +14,9 @@
 		FDD2276F1B2DD0CF00770969 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD2276E1B2DD0CF00770969 /* Images.xcassets */; };
 		FDD227721B2DD0CF00770969 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD227701B2DD0CF00770969 /* LaunchScreen.xib */; };
 		FDD2277E1B2DD0CF00770969 /* BLKImageProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD2277D1B2DD0CF00770969 /* BLKImageProviderTests.m */; };
-		FDEDBD301B35819500D59186 /* BLKPhotoLibraryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */; };
+		FDEDBD341B35895400D59186 /* BLKImporterFactoryImplentation.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD331B35895400D59186 /* BLKImporterFactoryImplentation.m */; };
+		FDEDBD3A1B3589FF00D59186 /* BLKPhotoLibraryExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD371B3589FF00D59186 /* BLKPhotoLibraryExporter.m */; };
+		FDEDBD3B1B3589FF00D59186 /* BLKPhotoLibraryImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,6 @@
 		FD3979231B3570B800FD15F1 /* BLKImageImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImageImporter.h; sourceTree = "<group>"; };
 		FD3979241B3570C600FD15F1 /* BLKImageExporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImageExporter.h; sourceTree = "<group>"; };
 		FD3979251B35713600FD15F1 /* BLKHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKHandlers.h; sourceTree = "<group>"; };
-		FD3979271B35763D00FD15F1 /* BLKPhotoLibraryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryImporter.h; sourceTree = "<group>"; };
-		FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryImporter.m; sourceTree = "<group>"; };
 		FDD2275E1B2DD0CF00770969 /* BLKImageProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLKImageProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD227621B2DD0CF00770969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD227631B2DD0CF00770969 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,8 +47,13 @@
 		FDD227771B2DD0CF00770969 /* BLKImageProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BLKImageProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD2277C1B2DD0CF00770969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDD2277D1B2DD0CF00770969 /* BLKImageProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLKImageProviderTests.m; sourceTree = "<group>"; };
-		FDEDBD2E1B35819500D59186 /* BLKPhotoLibraryExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryExporter.h; sourceTree = "<group>"; };
-		FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryExporter.m; sourceTree = "<group>"; };
+		FDEDBD311B35834800D59186 /* BLKImportersFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLKImportersFactory.h; sourceTree = "<group>"; };
+		FDEDBD321B35895400D59186 /* BLKImporterFactoryImplentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKImporterFactoryImplentation.h; sourceTree = "<group>"; };
+		FDEDBD331B35895400D59186 /* BLKImporterFactoryImplentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKImporterFactoryImplentation.m; sourceTree = "<group>"; };
+		FDEDBD361B3589FF00D59186 /* BLKPhotoLibraryExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryExporter.h; sourceTree = "<group>"; };
+		FDEDBD371B3589FF00D59186 /* BLKPhotoLibraryExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryExporter.m; sourceTree = "<group>"; };
+		FDEDBD381B3589FF00D59186 /* BLKPhotoLibraryImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLKPhotoLibraryImporter.h; sourceTree = "<group>"; };
+		FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLKPhotoLibraryImporter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 				FD3979231B3570B800FD15F1 /* BLKImageImporter.h */,
 				FD3979241B3570C600FD15F1 /* BLKImageExporter.h */,
 				FD3979251B35713600FD15F1 /* BLKHandlers.h */,
+				FDEDBD311B35834800D59186 /* BLKImportersFactory.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -85,10 +90,9 @@
 		FD3979261B3575A400FD15F1 /* implementations */ = {
 			isa = PBXGroup;
 			children = (
-				FD3979271B35763D00FD15F1 /* BLKPhotoLibraryImporter.h */,
-				FD3979281B35763D00FD15F1 /* BLKPhotoLibraryImporter.m */,
-				FDEDBD2E1B35819500D59186 /* BLKPhotoLibraryExporter.h */,
-				FDEDBD2F1B35819500D59186 /* BLKPhotoLibraryExporter.m */,
+				FDEDBD351B3589FF00D59186 /* photoLib */,
+				FDEDBD321B35895400D59186 /* BLKImporterFactoryImplentation.h */,
+				FDEDBD331B35895400D59186 /* BLKImporterFactoryImplentation.m */,
 			);
 			path = implementations;
 			sourceTree = "<group>";
@@ -151,6 +155,17 @@
 				FDD2277C1B2DD0CF00770969 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDEDBD351B3589FF00D59186 /* photoLib */ = {
+			isa = PBXGroup;
+			children = (
+				FDEDBD361B3589FF00D59186 /* BLKPhotoLibraryExporter.h */,
+				FDEDBD371B3589FF00D59186 /* BLKPhotoLibraryExporter.m */,
+				FDEDBD381B3589FF00D59186 /* BLKPhotoLibraryImporter.h */,
+				FDEDBD391B3589FF00D59186 /* BLKPhotoLibraryImporter.m */,
+			);
+			path = photoLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDEDBD3B1B3589FF00D59186 /* BLKPhotoLibraryImporter.m in Sources */,
 				FDD2276A1B2DD0CF00770969 /* ViewController.m in Sources */,
 				FDD227671B2DD0CF00770969 /* AppDelegate.m in Sources */,
-				FD3979291B35763D00FD15F1 /* BLKPhotoLibraryImporter.m in Sources */,
 				FDD227641B2DD0CF00770969 /* main.m in Sources */,
-				FDEDBD301B35819500D59186 /* BLKPhotoLibraryExporter.m in Sources */,
+				FDEDBD341B35895400D59186 /* BLKImporterFactoryImplentation.m in Sources */,
+				FDEDBD3A1B3589FF00D59186 /* BLKPhotoLibraryExporter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
